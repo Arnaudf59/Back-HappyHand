@@ -1,36 +1,33 @@
 import mongoose from 'mongoose';
+import { PrestationDoc } from './prestation';
+import { UserDoc } from './user';
 
 export class DevisDoc extends mongoose.Document {
-    prestataire: PrestataireDoc;
-    prestation: PrestationDoc;
-    client: ClientDoc;
+    prestataire: UserDoc;
+    prestation: PrestationDoc[];
+    client: UserDoc;
     dateDevis: Date;
-    tarifHoraire: PrestataireDoc;
     prix: Number;
-    datePrestation: Number;
+    datePrestation: Date;
     statusDevis: Number;
 }
 
 const devisSchema = new mongoose.Schema({
     prestataire: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Prestataire'
+        ref: 'User'
     },
-    prestation: {
+    prestation: [{
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Prestation'
-    },
+    }],
     client: {
         type: mongoose.Schema.Types.ObjectId,
-        ref: 'Client'
+        ref: 'User'
     },
     dateDevis: {
         type: Date
 
-    },
-    tarifHoraire: {
-        type: mongoose.Schema.Types.ObjectId,
-        ref: 'TarifHoraire'
     },
     prix: {
         type: Number

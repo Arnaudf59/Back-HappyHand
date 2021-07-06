@@ -6,8 +6,8 @@ Object.defineProperty(exports, "__esModule", { value: true });
 const express_1 = __importDefault(require("express"));
 const colors_1 = __importDefault(require("colors"));
 const mongoose_config_1 = require("./config/mongoose.config");
-const user_route_1 = require("./routes/user.route");
-const role_route_1 = require("./routes/role.route");
+const user_routes_1 = require("./routes/user.routes");
+const role_routes_1 = require("./routes/role.routes");
 const app = express_1.default();
 const port = 8000;
 app.use(express_1.default.json());
@@ -21,6 +21,6 @@ let user = (req, res, next) => {
 app.post("/users", user);
 app.get("/users", user);
 mongoose_config_1.setMongoConnect();
-user_route_1.setUserRouting(app);
-role_route_1.setRoleRouting(app);
+user_routes_1.setUserRouting(app);
+role_routes_1.setRoleRouting(app);
 //# sourceMappingURL=app.js.map

@@ -1,11 +1,10 @@
 import mongoose from 'mongoose';
+import { DevisDoc } from './devis';
 
 export class FacturationDoc extends mongoose.Document {
     devis: DevisDoc;
     montant: Number;
     dateFacturation: Date;
-
-
 }
 
 const facturationSchema = new mongoose.Schema({
@@ -22,4 +21,4 @@ const facturationSchema = new mongoose.Schema({
 
 });
 
-export const Facturation = mongoose.model<FacturationDoc>("Eval", facturationSchema);
+export const Facturation = mongoose.model<FacturationDoc>("Facturation", facturationSchema);

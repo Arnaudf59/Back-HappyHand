@@ -1,9 +1,12 @@
 import mongoose from 'mongoose';
+import { PrestationDoc } from './prestation';
 import { UserDoc } from './user';
 
 export class EvalDoc extends mongoose.Document {
+    
     user: UserDoc;
     prestation: PrestationDoc;
+    prestataire : UserDoc;
     qualitePresta: String;
     qualiteComunication: String;
     qualiteDossierTech: String;
@@ -19,6 +22,10 @@ const evalSchema = new mongoose.Schema({
     prestation: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Prestation'
+    },
+    prestataire: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'User'
     },
     qualitePresta: {
         type: String
