@@ -10,13 +10,13 @@ class MetierDoc extends mongoose_1.default.Document {
 exports.MetierDoc = MetierDoc;
 ;
 const metierSchema = new mongoose_1.default.Schema({
-    metier: {
+    nom: {
         type: String
     },
     description: {
         type: String
     },
-    liste_prestataire: [{
+    liste_prestation: [{
             type: mongoose_1.default.Schema.Types.ObjectId,
             ref: "Prestation"
         }]

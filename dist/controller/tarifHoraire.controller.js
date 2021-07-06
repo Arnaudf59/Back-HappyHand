@@ -9,24 +9,17 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
     });
 };
 Object.defineProperty(exports, "__esModule", { value: true });
-exports.roleController = void 0;
-const role_1 = require("../models/role");
-class RoleController {
+exports.tarifHoraireController = void 0;
+const tarifHoraire_1 = require("../models/tarifHoraire");
+class TarifHoraireController {
     constructor() {
-        this.findByID = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
-            res.status(200)
-                .send(yield role_1.Role.findById(req.params.id))
-                .end();
-            next();
-        });
         this.create = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
-            console.log(req.body);
-            res.status(201)
-                .send(yield role_1.Role.create(req.body))
+            res.status(200)
+                .send(yield tarifHoraire_1.TarifHoraire.create(req.body))
                 .end();
             next();
         });
     }
 }
-exports.roleController = Object.freeze(new RoleController());
-//# sourceMappingURL=role.controller.js.map
+exports.tarifHoraireController = Object.freeze(new TarifHoraireController());
+//# sourceMappingURL=tarifHoraire.controller.js.map

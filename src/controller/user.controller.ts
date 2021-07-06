@@ -16,6 +16,13 @@ class UserController {
         next();
     }
 
+    findByRole = async (req, res, next) => {
+        res.status(200)
+           .send(await User.find({"role" : req.params.id}))
+           .end();
+        next();
+    }
+
     create = async (req, res, next) => {
         res.status(201)
            .send(await User.create(req.body))

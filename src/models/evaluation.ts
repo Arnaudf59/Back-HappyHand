@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { DevisDoc } from './devis';
 import { PrestationDoc } from './prestation';
 import { UserDoc } from './user';
 
@@ -11,6 +12,7 @@ export class EvalDoc extends mongoose.Document {
     qualiteComunication: String;
     qualiteDossierTech: String;
     niveauExpertise: String;
+    idDevis: DevisDoc
 
 }
 
@@ -39,6 +41,10 @@ const evalSchema = new mongoose.Schema({
     },
     niveauExpertise: {
         type: String
+    },
+    idDevis: {
+        type: mongoose.Schema.Types.ObjectId,
+        ref: 'Devis'
     }
 
 });

@@ -25,6 +25,12 @@ class UserController {
                 .end();
             next();
         });
+        this.findByRole = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield user_1.User.find({ "role": req.params.id }))
+                .end();
+            next();
+        });
         this.create = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(201)
                 .send(yield user_1.User.create(req.body))
