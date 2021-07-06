@@ -2,6 +2,7 @@ import express from 'express';
 import colors from "colors";
 import { setMongoConnect } from './config/mongoose.config';
 import { setUserRouting } from './routes/user.route';
+import { setRoleRouting } from './routes/role.route';
 
     const app = express();
     const port = 8000;
@@ -22,3 +23,4 @@ import { setUserRouting } from './routes/user.route';
     setMongoConnect();
 
     setUserRouting(app);
+    setRoleRouting(app);
