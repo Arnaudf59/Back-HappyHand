@@ -2,7 +2,7 @@ import mongoose from "mongoose";
 import { UserDoc } from "./user";
 
 export class RolerDoc extends mongoose.Document{
-    id_user : UserDoc;
+    user : UserDoc;
     role: Number
   }
 
