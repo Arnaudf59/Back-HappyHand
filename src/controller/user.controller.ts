@@ -17,7 +17,6 @@ class UserController {
     }
 
     create = async (req, res, next) => {
-        console.log(req.body);
         res.status(201)
            .send(await User.create(req.body))
            .end()
