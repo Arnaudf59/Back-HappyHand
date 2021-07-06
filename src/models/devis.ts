@@ -42,8 +42,6 @@ const devisSchema = new mongoose.Schema({
         type: Number
     }
 
-});
-
-
+})
 
 export const Devis = mongoose.model<DevisDoc>("Devis", devisSchema);
