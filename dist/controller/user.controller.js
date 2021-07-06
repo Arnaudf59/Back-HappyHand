@@ -26,7 +26,6 @@ class UserController {
             next();
         });
         this.create = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
-            console.log(req.body);
             res.status(201)
                 .send(yield user_1.User.create(req.body))
                 .end();
