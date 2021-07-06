@@ -5,37 +5,37 @@ import { UserDoc } from './user';
 
 export class PrestationDoc extends mongoose.Document{
 
+    nom : String;
     metier : MetierDoc;
     description: String;
-    tarifHorraire: Number;
-    prestataire : UserDoc;
-    status: Number;
-    evaluation: EvalDoc;
-}
+    //prestataire : UserDoc;
+    //status: Number;
+    //evaluation: EvalDoc;
+}//
 
 const prestationSchema = new mongoose.Schema({
 
+    nom : {
+        type : String
+    },
     metier : {
         type: mongoose.Schema.Types.ObjectId,
         ref : "Metier"
     },
     description : {
         type : String
-    },
-    tarifHorraire : {
-        type : Number
-    },
-    presataire : {
-        type: mongoose.Schema.Types.ObjectId,
-        ref : "User"
-    },
-    status : {
-        type : Number
-    },
-    evaluation : {
-        type: mongoose.Schema.Types.ObjectId,
-        ref : "Eval"
     }
+    //presataire : {
+    //    type: mongoose.Schema.Types.ObjectId,
+    //    ref : "User"
+    //},
+    //status : {
+    //    type : Number
+    //},
+    //evaluation : {
+    //    type: mongoose.Schema.Types.ObjectId,
+    //    ref : "Eval"
+    //}
 })
 
 export const Prestation = mongoose.model("Prestation", prestationSchema);

@@ -1,10 +1,11 @@
 import mongoose, { mongo } from "mongoose";
 import crypto from "crypto";
+import { RoleDoc } from "./role";
 
 export class UserDoc extends mongoose.Document{
   nom : String;
   prenom : String;
-  admin: Number;
+  role: RoleDoc;
 }
 
 const userSchema = new mongoose.Schema ({
@@ -26,7 +27,8 @@ const userSchema = new mongoose.Schema ({
     //  required: true
     //},
     role: {
-        type : Number
+        type : mongoose.Schema.Types.ObjectId,
+        ref: 'Role'
     },
     //hash: String,
     //salt: String

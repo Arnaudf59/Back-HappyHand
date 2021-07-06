@@ -2,9 +2,9 @@ import { Role } from "../models/role"
 
 class RoleController {
 
-    findByUserID = async (req ,res ,next ) => {
+    findByID = async (req ,res ,next ) => {
         res.status(200)
-           .send(await Role.find({"id_user": req.params.id}).populate("UserDoc"))
+           .send(await Role.findById(req.params.id))
            .end();
         next();
     }

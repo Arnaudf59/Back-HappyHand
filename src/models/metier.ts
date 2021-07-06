@@ -3,20 +3,20 @@ import { PrestationDoc } from "./prestation";
 
 export class MetierDoc extends mongoose.Document{
 
-    metier : String;
+    nom : String;
     description : String;
-    liste_prestataire: PrestationDoc[];
+    liste_prestation: PrestationDoc[];
 };
 
 const metierSchema = new mongoose.Schema({
 
-    metier : {
+    nom : {
         type: String
     },
     description : {
         type : String
     },
-    liste_prestataire : [{
+    liste_prestation : [{
         type: mongoose.Schema.Types.ObjectId,
         ref : "Prestation"
     }]

@@ -4,7 +4,7 @@ export const setRoleRouting = (app) => {
 
     const endpoint = "roles"; 
 
-    app.get(`/${endpoint}/:id`, roleController.findByUserID);
+    app.get(`/${endpoint}/:id`, roleController.findByID);
 
     app.post(`/${endpoint}`, roleController.create);
 }
