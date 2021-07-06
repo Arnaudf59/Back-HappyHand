@@ -32,6 +32,10 @@ const evalSchema = new mongoose_1.default.Schema({
     },
     niveauExpertise: {
         type: String
+    },
+    idDevis: {
+        type: mongoose_1.default.Schema.Types.ObjectId,
+        ref: 'Devis'
     }
 });
 exports.Eval = mongoose_1.default.model("Eval", evalSchema);

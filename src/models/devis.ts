@@ -38,7 +38,6 @@ const devisSchema = new mongoose.Schema({
     statusDevis: {
         type: Number
     }
-
-})
+});
 
 export const Devis = mongoose.model<DevisDoc>("Devis", devisSchema);

@@ -27,7 +27,8 @@ const userSchema = new mongoose_1.default.Schema({
     //  required: true
     //},
     role: {
-        type: Number
+        type: mongoose_1.default.Schema.Types.ObjectId,
+        ref: 'Role'
     },
     //hash: String,
     //salt: String
