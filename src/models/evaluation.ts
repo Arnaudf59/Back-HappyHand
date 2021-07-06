@@ -1,4 +1,5 @@
 import mongoose from 'mongoose';
+import { UserDoc } from './user';
 
 export class EvalDoc extends mongoose.Document {
     user: UserDoc;
