@@ -19,6 +19,18 @@ class FacturationController {
                 .end();
             next();
         });
+        this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield facturation_1.Facturation.find().populate("devis"))
+                .end();
+            next();
+        });
+        this.findById = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield facturation_1.Facturation.findById(req.params.id).populate("devis"))
+                .end();
+            next();
+        });
     }
 }
 exports.facturationController = Object.freeze(new FacturationController());

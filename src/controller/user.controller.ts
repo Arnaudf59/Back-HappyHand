@@ -5,21 +5,21 @@ class UserController {
 
     findAll = async(req, res, next) => {
         res.status(200)
-           .send(await User.find())
+           .send(await User.find().populate("role").populate("prestations").populate("metiers"))
            .end();
         next();
     }
 
     findById = async (req, res, next) => {
         res.status(200)
-           .send(await User.findById(req.params.id))
+           .send(await User.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
            .end();
         next();
     }
 
     findByRole = async (req, res, next) => {
         res.status(200)
-           .send(await User.find({"role" : req.params.id}))
+           .send(await User.find({"role" : req.params.id}).populate("role").populate("prestations").populate("metiers"))
            .end();
         next();
     }

@@ -16,19 +16,19 @@ class UserController {
     constructor() {
         this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield user_1.User.find())
+                .send(yield user_1.User.find().populate("role").populate("prestations").populate("metiers"))
                 .end();
             next();
         });
         this.findById = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield user_1.User.findById(req.params.id))
+                .send(yield user_1.User.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
                 .end();
             next();
         });
         this.findByRole = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield user_1.User.find({ "role": req.params.id }))
+                .send(yield user_1.User.find({ "role": req.params.id }).populate("role").populate("prestations").populate("metiers"))
                 .end();
             next();
         });

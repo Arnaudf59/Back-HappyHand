@@ -8,6 +8,20 @@ class FacturationController {
            .end()
         next();
     }
+
+    findAll = async(req, res, next) => {
+        res.status(200)
+           .send(await Facturation.find().populate("devis"))
+           .end();
+        next();
+    }
+
+    findById = async (req, res, next) => {
+        res.status(200)
+           .send(await Facturation.findById(req.params.id).populate("devis"))
+           .end();
+        next();
+    }
 }
 
 export const facturationController =Object.freeze(new FacturationController());
