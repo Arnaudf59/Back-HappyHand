@@ -8,6 +8,20 @@ class EvalController {
            .end()
         next();
     }
+
+    findAll = async(req, res, next) => {
+        res.status(200)
+           .send(await Eval.find().populate("role").populate("prestations").populate("metiers"))
+           .end();
+        next();
+    }
+
+    findById = async (req, res, next) => {
+        res.status(200)
+           .send(await Eval.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
+           .end();
+        next();
+    }
 }
 
 export const evalController = Object.freeze( new EvalController);

@@ -1,25 +1,35 @@
+import { Prestation } from "../models/prestation";
 import { User } from "../models/user";
 
 class UserController {
 
     findAll = async(req, res, next) => {
         res.status(200)
-           .send(await User.find())
+           .send(await User.find().populate("role").populate("prestations").populate("metiers"))
            .end();
         next();
     }
 
     findById = async (req, res, next) => {
         res.status(200)
-           .send(await User.findById(req.params.id))
+           .send(await User.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
            .end();
         next();
     }
 
     findByRole = async (req, res, next) => {
         res.status(200)
-           .send(await User.find({"role" : req.params.id}))
+           .send(await User.find({"role" : req.params.id}).populate("role").populate("prestations").populate("metiers"))
            .end();
+        next();
+    }
+
+    findByPrestation = async (req, res, next) => {
+        let prestation : any = await Prestation.findById(req.params.id);
+        let user = await User.find({ prestations : {$in : prestation._id}}).populate("role").populate("prestations").populate("metiers");
+        res.status(200)
+           .send(user)
+           .end()
         next();
     }
 

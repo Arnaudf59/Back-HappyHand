@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "60e4614331fd424a94ee9f21"
+  },
+  "liste_prestation": [
+    {
+      "$oid": "60e4667774e29750281bf9b7"
+    }
+  ],
+  "nom": "Plombier",
+  "description": "Je repars votre tuyauterie",
+  "__v": 0
+}]

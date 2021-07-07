@@ -19,6 +19,18 @@ class EvalController {
                 .end();
             next();
         });
+        this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield evaluation_1.Eval.find().populate("role").populate("prestations").populate("metiers"))
+                .end();
+            next();
+        });
+        this.findById = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield evaluation_1.Eval.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
+                .end();
+            next();
+        });
     }
 }
 exports.evalController = Object.freeze(new EvalController);

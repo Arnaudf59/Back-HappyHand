@@ -1,0 +1,21 @@
+[{
+  "_id": {
+    "$oid": "60e4667774e29750281bf9b7"
+  },
+  "nom": "toilette",
+  "metier": {
+    "$oid": "60e4614331fd424a94ee9f21"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e5988924b2db47cc869399"
+  },
+  "nom": "robinet",
+  "metier": {
+    "$oid": "60e4614331fd424a94ee9f21"
+  },
+  "description": " ",
+  "__v": 0
+}]
