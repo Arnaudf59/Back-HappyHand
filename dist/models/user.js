@@ -9,11 +9,14 @@ class UserDoc extends mongoose_1.default.Document {
 }
 exports.UserDoc = UserDoc;
 const userSchema = new mongoose_1.default.Schema({
-    //email: {
-    //  type: String,
-    //  unique: true,
-    //  required: true
-    //},
+    email: {
+        type: String,
+        unique: true,
+        required: true
+    },
+    password: {
+        type: String
+    },
     nom: {
         type: String,
         required: true
@@ -22,14 +25,37 @@ const userSchema = new mongoose_1.default.Schema({
         type: String,
         required: true
     },
-    //date_naissance: {
-    //  type: String,
-    //  required: true
-    //},
+    dateNaissance: {
+        type: Date,
+        required: true
+    },
     role: {
         type: mongoose_1.default.Schema.Types.ObjectId,
         ref: 'Role'
     },
+    adresse: {
+        type: String
+    },
+    ville: {
+        type: String
+    },
+    codePostal: {
+        type: String
+    },
+    nomPrestataire: {
+        type: String
+    },
+    description: {
+        type: String
+    },
+    prestations: [{
+            type: mongoose_1.default.Schema.Types.ObjectId,
+            ref: 'Prestation'
+        }],
+    metiers: [{
+            type: mongoose_1.default.Schema.Types.ObjectId,
+            ref: 'Metier'
+        }]
     //hash: String,
     //salt: String
 });

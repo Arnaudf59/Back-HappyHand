@@ -1,0 +1,22 @@
+[{
+  "_id": {
+    "$oid": "60e46ba193433b0230907c61"
+  },
+  "user": {
+    "$oid": "60e57446093ea836a8a7fdd6"
+  },
+  "prestation": {
+    "$oid": "60e57446093ea836a8a7fdd6"
+  },
+  "prestataire": {
+    "$oid": "60e4508e4ace353dec92d655"
+  },
+  "qualitePresta": "ok",
+  "qualiteComunication": "ok",
+  "qualiteDossierTech": "ok",
+  "niveauExpertise": "ok",
+  "idDevis": {
+    "$oid": "60e46912d4cc842af4764f80"
+  },
+  "__v": 0
+}]

@@ -10,6 +10,7 @@ var __awaiter = (this && this.__awaiter) || function (thisArg, _arguments, P, ge
 };
 Object.defineProperty(exports, "__esModule", { value: true });
 exports.userController = void 0;
+const prestation_1 = require("../models/prestation");
 const user_1 = require("../models/user");
 class UserController {
     constructor() {
@@ -28,6 +29,14 @@ class UserController {
         this.findByRole = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
                 .send(yield user_1.User.find({ "role": req.params.id }))
+                .end();
+            next();
+        });
+        this.findByPrestation = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            let prestation = yield prestation_1.Prestation.findById(req.params.id);
+            let user = yield user_1.User.find({ prestations: { $in: prestation._id } }).populate("role").populate("prestations").populate("metiers");
+            res.status(200)
+                .send(user)
                 .end();
             next();
         });

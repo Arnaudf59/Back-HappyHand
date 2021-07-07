@@ -1,0 +1,133 @@
+[{
+  "_id": {
+    "$oid": "60e57104093ea836a8a7fdce"
+  },
+  "prestations": [
+    {
+      "$oid": "60e571ced1f4617298b7b428"
+    }
+  ],
+  "metiers": [
+    {
+      "$oid": "60e4614331fd424a94ee9f21"
+    }
+  ],
+  "email": "arnaud.fourmault@gmail.com",
+  "password": "test",
+  "nom": "Fourmault",
+  "prenom": "Arnaud",
+  "dateNaissance": {
+    "$date": "2021-07-11T00:00:00Z"
+  },
+  "role": {
+    "$oid": "60e44d5d4eaa6c3c3c265a36"
+  },
+  "adresse": "6 rue du Marechal Foch",
+  "ville": "Loos",
+  "codePostal": "59120",
+  "nomPrestataire": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e571ad093ea836a8a7fdd0"
+  },
+  "prestations": [],
+  "metiers": [],
+  "email": "maud.grosicki@gmail.com",
+  "password": "test",
+  "nom": "Grosicki",
+  "prenom": "Maud",
+  "dateNaissance": {
+    "$date": "2021-07-11T00:00:00Z"
+  },
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "adresse": "42 rue de verdum",
+  "ville": "La Bassée",
+  "codePostal": "59051",
+  "nomPrestataire": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e57370093ea836a8a7fdd2"
+  },
+  "prestations": [],
+  "metiers": [],
+  "email": "thomas.lemaitre@gmail.com",
+  "password": "test",
+  "nom": "Lemaitre",
+  "prenom": "Thomas",
+  "dateNaissance": {
+    "$date": "2021-07-11T00:00:00Z"
+  },
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "adresse": "42 rue de verdum",
+  "ville": "La Bassée",
+  "codePostal": "59051",
+  "nomPrestataire": "",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e57489093ea836a8a7fdd8"
+  },
+  "prestations": [
+    {
+      "$oid": "60e4667774e29750281bf9b7"
+    }
+  ],
+  "metiers": [
+    {
+      "$oid": "60e4614331fd424a94ee9f21"
+    }
+  ],
+  "email": "christelle.degand@gmail.com",
+  "password": "test",
+  "nom": "Degand",
+  "prenom": "Christelle",
+  "dateNaissance": {
+    "$date": "2021-07-11T00:00:00Z"
+  },
+  "role": {
+    "$oid": "60e44f4a61171d44e4d7f5b0"
+  },
+  "adresse": "30 rue Pasteur",
+  "ville": "Loos",
+  "codePostal": "59120",
+  "nomPrestataire": "Christelle",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e5995024b2db47cc86939b"
+  },
+  "prestations": [
+    {
+      "$oid": "60e4667774e29750281bf9b7"
+    },
+    {
+      "$oid": "60e5988924b2db47cc869399"
+    }
+  ],
+  "metiers": [
+    {
+      "$oid": "60e4614331fd424a94ee9f21"
+    }
+  ],
+  "email": "yannick.lombard@gmail.com",
+  "password": "test",
+  "nom": "Lombart",
+  "prenom": "Yannick",
+  "dateNaissance": {
+    "$date": "2021-07-11T00:00:00Z"
+  },
+  "role": {
+    "$oid": "60e44f4a61171d44e4d7f5b0"
+  },
+  "adresse": "8 rue de lomme",
+  "ville": "Lille",
+  "codePostal": "59800",
+  "nomPrestataire": "Yannick",
+  "__v": 0
+}]

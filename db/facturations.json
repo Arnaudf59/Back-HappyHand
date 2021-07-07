@@ -1,0 +1,13 @@
+[{
+  "_id": {
+    "$oid": "60e46dc43b38da4d787b94bd"
+  },
+  "devis": {
+    "$oid": "60e46912d4cc842af4764f80"
+  },
+  "montant": 11,
+  "dateFacturation": {
+    "$date": "2021-07-11T00:00:00Z"
+  },
+  "__v": 0
+}]

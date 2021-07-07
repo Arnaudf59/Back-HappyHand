@@ -19,6 +19,18 @@ class TarifHoraireController {
                 .end();
             next();
         });
+        this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield tarifHoraire_1.TarifHoraire.find())
+                .end();
+            next();
+        });
+        this.findById = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            res.status(200)
+                .send(yield tarifHoraire_1.TarifHoraire.findById(req.params.id))
+                .end();
+            next();
+        });
     }
 }
 exports.tarifHoraireController = Object.freeze(new TarifHoraireController());

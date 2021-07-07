@@ -1,0 +1,25 @@
+[{
+  "_id": {
+    "$oid": "60e4669874e29750281bf9b9"
+  },
+  "user": {
+    "$oid": "60e5995024b2db47cc86939b"
+  },
+  "prestation": {
+    "$oid": "60e4667774e29750281bf9b7"
+  },
+  "tauxHoraire": 7,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60e599bd24b2db47cc86939d"
+  },
+  "user": {
+    "$oid": "60e5995024b2db47cc86939b"
+  },
+  "prestation": {
+    "$oid": "60e5988924b2db47cc869399"
+  },
+  "tauxHoraire": 7,
+  "__v": 0
+}]
