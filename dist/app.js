@@ -14,6 +14,7 @@ const tarifHoraire_routes_1 = require("./routes/tarifHoraire.routes");
 const devis_routes_1 = require("./routes/devis.routes");
 const evaluation_routes_1 = require("./routes/evaluation.routes");
 const facturation_routes_1 = require("./routes/facturation.routes");
+const auth_routes_1 = require("./routes/auth.routes");
 const app = express_1.default();
 const port = 8000;
 app.use(express_1.default.json());
@@ -35,4 +36,5 @@ tarifHoraire_routes_1.setTarifHoraireRouting(app);
 devis_routes_1.setDevisRouting(app);
 evaluation_routes_1.setEvalRouting(app);
 facturation_routes_1.setFacturationRouting(app);
+auth_routes_1.setAuthRouting(app);
 //# sourceMappingURL=app.js.map
