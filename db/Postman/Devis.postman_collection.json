@@ -1,0 +1,139 @@
+{
+	"info": {
+		"_postman_id": "471a2715-5484-4782-8667-1df467e76593",
+		"name": "Devis",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Devis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"prestataire\" : \"60e4508e4ace353dec92d655\",\r\n    \"prestation\" : \"60e4667774e29750281bf9b7\",\r\n    \"client\" : \"60e4506d4ace353dec92d651\",\r\n    \"dateDevis\" : \"2021-07-06\",\r\n    \"prix\": 14,\r\n    \"datePrestation\" : \"2021/07/10\",\r\n    \"statusDevis\": 1\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/devis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Devis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/devis",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devis"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Devis By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/devis/60e46912d4cc842af4764f80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devis",
+						"60e46912d4cc842af4764f80"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Devis by Prestattaire",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/devis/prestataires/60e5995024b2db47cc86939b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devis",
+						"prestataires",
+						"60e5995024b2db47cc86939b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Devis By Client",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/devis/clients/60e571ad093ea836a8a7fdd0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devis",
+						"clients",
+						"60e571ad093ea836a8a7fdd0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Devis By Prestations",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/devis/prestations/60e4667774e29750281bf9b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"devis",
+						"prestations",
+						"60e4667774e29750281bf9b7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "8fcaa0b3-c639-4b4b-aef9-c7fab14be694",
+		"name": "Facturation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Facturation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"devis\" : \"60e46912d4cc842af4764f80\",\r\n    \"montant\": 11,\r\n    \"dateFacturation\" : \"2021-07-11\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/facturations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"facturations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Facturation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/facturations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"facturations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Facturation By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/facturations/60e46dc43b38da4d787b94bd",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"facturations",
+						"60e46dc43b38da4d787b94bd"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

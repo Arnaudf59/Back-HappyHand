@@ -1,0 +1,97 @@
+{
+	"info": {
+		"_postman_id": "31754593-2cfd-4383-91de-44f7eabc95bb",
+		"name": "Metier",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Metier",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\": \"Plombier\",\r\n    \"description\": \"Je repars votre tuyauterie\",\r\n    \"liste_prestation\": [\"60e4613c31fd424a94ee9f1f\"]\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/metiers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"metiers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Metier",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/metiers",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"metiers"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Metier By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/metiers/60e4614331fd424a94ee9f21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"metiers",
+						"60e4614331fd424a94ee9f21"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Metier By Prestation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/metiers/prestations/60e4667774e29750281bf9b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"metiers",
+						"prestations",
+						"60e4667774e29750281bf9b7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
