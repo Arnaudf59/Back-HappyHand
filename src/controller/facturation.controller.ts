@@ -22,6 +22,21 @@ class FacturationController {
            .end();
         next();
     }
+
+    update = async (req, res, next) => {
+        await Facturation.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
+            if(data) {
+                res.status(200)
+                .send()
+                .end();
+            }else{
+                res.status(404)
+                   .send("Facturation inexistante")
+                   .end()
+            }
+        })
+        next();
+    }
 }
 
 export const facturationController =Object.freeze(new FacturationController());

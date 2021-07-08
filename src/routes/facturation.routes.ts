@@ -8,4 +8,6 @@ export const setFacturationRouting = (app) => {
     app.get(`/${endpoint}/:id`, facturationController.findById);
 
     app.post(`/${endpoint}`, facturationController.create);
+
+    app.patch(`/${endpoint}/:id`, facturationController.update);
 }

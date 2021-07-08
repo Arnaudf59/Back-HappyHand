@@ -57,6 +57,21 @@ class DevisController {
                 .end();
             next();
         });
+        this.update = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            yield devis_1.Devis.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
+                if (data) {
+                    res.status(200)
+                        .send()
+                        .end();
+                }
+                else {
+                    res.status(404)
+                        .send("Devis inexistante")
+                        .end();
+                }
+            });
+            next();
+        });
     }
 }
 exports.devisController = Object.freeze(new DevisController());

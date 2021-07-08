@@ -55,7 +55,7 @@ class UserController {
                 }
                 else {
                     res.status(404)
-                        .send("VUtilisateur inexistante")
+                        .send("Utilisateur inexistante")
                         .end();
                 }
             });

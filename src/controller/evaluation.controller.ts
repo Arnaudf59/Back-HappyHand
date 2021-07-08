@@ -14,14 +14,14 @@ class EvalController {
 
     findAll = async(req, res, next) => {
         res.status(200)
-           .send(await Eval.find().populate("role").populate("prestations").populate("metiers"))
+           .send(await Eval.find().populate("user").populate("prestation").populate("prestataire").populate("idDevis"))
            .end();
         next();
     }
 
     findById = async (req, res, next) => {
         res.status(200)
-           .send(await Eval.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
+           .send(await Eval.findById(req.params.id).populate("user").populate("prestation").populate("prestataire").populate("idDevis"))
            .end();
         next();
     }
@@ -59,6 +59,21 @@ class EvalController {
         res.status(200)
            .send(evals)
            .end()
+        next();
+    }
+
+    update = async (req, res, next) => {
+        await Eval.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
+            if(data) {
+                res.status(200)
+                .send()
+                .end();
+            }else{
+                res.status(404)
+                   .send("VUtilisateur inexistante")
+                   .end()
+            }
+        })
         next();
     }
 }

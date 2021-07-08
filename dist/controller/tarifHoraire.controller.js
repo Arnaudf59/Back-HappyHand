@@ -21,14 +21,29 @@ class TarifHoraireController {
         });
         this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield tarifHoraire_1.TarifHoraire.find())
+                .send(yield tarifHoraire_1.TarifHoraire.find().populate("user").populate("prestation"))
                 .end();
             next();
         });
         this.findById = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield tarifHoraire_1.TarifHoraire.findById(req.params.id))
+                .send(yield tarifHoraire_1.TarifHoraire.findById(req.params.id).populate("user").populate("prestation"))
                 .end();
+            next();
+        });
+        this.update = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            yield tarifHoraire_1.TarifHoraire.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
+                if (data) {
+                    res.status(200)
+                        .send()
+                        .end();
+                }
+                else {
+                    res.status(404)
+                        .send("Tarif inexistante")
+                        .end();
+                }
+            });
             next();
         });
     }

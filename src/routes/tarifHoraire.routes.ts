@@ -8,4 +8,6 @@ export const setTarifHoraireRouting = (app) => {
     app.get(`/${endpoint}/:id`, tarifHoraireController.findById);
 
     app.post(`/${endpoint}`, tarifHoraireController.create);
+
+    app.patch(`/${endpoint}/:id`, tarifHoraireController.update);
 }

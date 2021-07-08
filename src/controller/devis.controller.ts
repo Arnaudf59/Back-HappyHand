@@ -51,6 +51,21 @@ class DevisController {
            .end()
         next();
     }
+
+    update = async (req, res, next) => {
+        await Devis.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
+            if(data) {
+                res.status(200)
+                .send()
+                .end();
+            }else{
+                res.status(404)
+                   .send("Devis inexistante")
+                   .end()
+            }
+        })
+        next();
+    }
 }
 
 export const devisController = Object.freeze(new DevisController());
