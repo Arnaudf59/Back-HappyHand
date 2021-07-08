@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "f6eb3b66-67cd-4e93-9a48-4ebd6966c2a1",
+		"name": "Prestation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Prestation",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nom\": \"robinet\",\r\n    \"metier\": \"60e4614331fd424a94ee9f21\",\r\n    \"description\": \" \"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/prestations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prestations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Prestation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prestations",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prestations"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Prestation By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prestations/60e4667774e29750281bf9b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prestations",
+						"60e4667774e29750281bf9b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get prestation By Users",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prestations/users/60e5995024b2db47cc86939b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prestations",
+						"users",
+						"60e5995024b2db47cc86939b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Prestations By Metiers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/prestations/metiers/60e4614331fd424a94ee9f21",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"prestations",
+						"metiers",
+						"60e4614331fd424a94ee9f21"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

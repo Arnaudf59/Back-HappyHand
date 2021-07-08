@@ -1,0 +1,160 @@
+{
+	"info": {
+		"_postman_id": "6ac8da7e-32ed-4435-9525-88be5fc6c746",
+		"name": "Evaluation",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Eval",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\" : \"60e4506d4ace353dec92d651\",\r\n    \"prestation\": \"60e4667774e29750281bf9b7\",\r\n    \"prestataire\": \"60e4508e4ace353dec92d655\",\r\n    \"qualitePresta\": \"ok\",\r\n    \"qualiteComunication\": \"ok\",\r\n    \"qualiteDossierTech\": \"ok\",\r\n    \"niveauExpertise\": \"ok\",\r\n    \"idDevis\" : \"60e46912d4cc842af4764f80\"\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/evals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get eval",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/evals",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Evals By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/evals/60e46ba193433b0230907c61",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals",
+						"60e46ba193433b0230907c61"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Eval By User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/evals/users/60e571ad093ea836a8a7fdd0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals",
+						"users",
+						"60e571ad093ea836a8a7fdd0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Eval By Prestation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/evals/prestations/60e4667774e29750281bf9b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals",
+						"prestations",
+						"60e4667774e29750281bf9b7"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Eval By Prestataire",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/evals/prestataires/60e5995024b2db47cc86939b",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals",
+						"prestataires",
+						"60e5995024b2db47cc86939b"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get By Devis",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/evals/devis/60e46912d4cc842af4764f80",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"evals",
+						"devis",
+						"60e46912d4cc842af4764f80"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}

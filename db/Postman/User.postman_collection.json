@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "656e0963-deb2-4f79-b644-90b76653b933",
+		"name": "User",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post User",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"email\": \"yannick.lombard@gmail.com\",\r\n    \"password\": \"test\",\r\n    \"nom\" : \"Lombart\",\r\n    \"prenom\": \"Yannick\",\r\n    \"dateNaissance\" : \"2021-07-11\",\r\n    \"role\" : \"60e44f4a61171d44e4d7f5b0\",\r\n    \"adresse\" : \"8 rue de lomme\",\r\n    \"ville\" : \"Lille\",\r\n    \"codePostal\" : \"59800\",\r\n    \"nomPrestataire\" : \"Yannick\",\r\n    \"prestations\" : [\"60e4667774e29750281bf9b7\", \"60e5988924b2db47cc869399\"],\r\n    \"metiers\" : [\"60e4614331fd424a94ee9f21\"]\r\n\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users/60e450444ace353dec92d64f",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"60e450444ace353dec92d64f"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By Role",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users/roles/60e44f4a61171d44e4d7f5b0",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"roles",
+						"60e44f4a61171d44e4d7f5b0"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By prestation",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/users/prestations/60e4667774e29750281bf9b7",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"users",
+						"prestations",
+						"60e4667774e29750281bf9b7"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
