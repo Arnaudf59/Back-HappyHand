@@ -9,6 +9,7 @@ import { setTarifHoraireRouting } from './routes/tarifHoraire.routes';
 import { setDevisRouting } from './routes/devis.routes';
 import { setEvalRouting } from './routes/evaluation.routes';
 import { setFacturationRouting } from './routes/facturation.routes';
+import { setAuthRouting } from './routes/auth.routes';
 
     const app = express();
     const port = 8000;
@@ -36,3 +37,4 @@ import { setFacturationRouting } from './routes/facturation.routes';
     setDevisRouting(app);
     setEvalRouting(app);
     setFacturationRouting(app);
+    setAuthRouting(app);

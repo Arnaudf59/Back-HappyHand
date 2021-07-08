@@ -1,0 +1,76 @@
+{
+	"info": {
+		"_postman_id": "23cf2c4d-21bd-4239-9a49-f21f694ebfc3",
+		"name": "Tarif Horaire",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Post Tarif Horaire",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"user\": \"60e5995024b2db47cc86939b\",\r\n    \"prestation\": \"60e5988924b2db47cc869399\",\r\n    \"tauxHoraire\": 7\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "http://localhost:8000/tarifhoraires",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tarifhoraires"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tarif Horaire",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/tarifhoraires",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tarifhoraires"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get Tarif Horaire By Id",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/tarifhoraires/60e4669874e29750281bf9b9",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"tarifhoraires",
+						"60e4669874e29750281bf9b9"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
