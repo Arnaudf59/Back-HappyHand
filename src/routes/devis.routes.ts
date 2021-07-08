@@ -11,4 +11,6 @@ export const setDevisRouting = (app) => {
     app.get(`/${endpoint}/prestations/:id`, devisController.findByPrestation);
 
     app.post(`/${endpoint}`, devisController.create);
+
+    app.patch(`/${endpoint}/:id`, devisController.update);
 }

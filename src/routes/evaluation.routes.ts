@@ -12,4 +12,8 @@ export const setEvalRouting = (app) => {
     app.get(`/${endpoint}/devis/:id`, evalController.findByDevis);
 
     app.post(`/${endpoint}`, evalController.create);
+
+    app.patch(`/${endpoint}/:id`, evalController.update);
+
+
 }

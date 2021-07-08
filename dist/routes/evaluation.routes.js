@@ -11,6 +11,7 @@ const setEvalRouting = (app) => {
     app.get(`/${endpoint}/prestataires/:id`, evaluation_controller_1.evalController.findByPrestataire);
     app.get(`/${endpoint}/devis/:id`, evaluation_controller_1.evalController.findByDevis);
     app.post(`/${endpoint}`, evaluation_controller_1.evalController.create);
+    app.patch(`/${endpoint}/:id`, evaluation_controller_1.evalController.update);
 };
 exports.setEvalRouting = setEvalRouting;
 //# sourceMappingURL=evaluation.routes.js.map

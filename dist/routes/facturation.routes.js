@@ -7,6 +7,7 @@ const setFacturationRouting = (app) => {
     app.get(`/${endpoint}`, facturation_controller_1.facturationController.findAll);
     app.get(`/${endpoint}/:id`, facturation_controller_1.facturationController.findById);
     app.post(`/${endpoint}`, facturation_controller_1.facturationController.create);
+    app.patch(`/${endpoint}/:id`, facturation_controller_1.facturationController.update);
 };
 exports.setFacturationRouting = setFacturationRouting;
 //# sourceMappingURL=facturation.routes.js.map

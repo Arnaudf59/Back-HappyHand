@@ -24,13 +24,13 @@ class EvalController {
         });
         this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield evaluation_1.Eval.find().populate("role").populate("prestations").populate("metiers"))
+                .send(yield evaluation_1.Eval.find().populate("user").populate("prestation").populate("prestataire").populate("idDevis"))
                 .end();
             next();
         });
         this.findById = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield evaluation_1.Eval.findById(req.params.id).populate("role").populate("prestations").populate("metiers"))
+                .send(yield evaluation_1.Eval.findById(req.params.id).populate("user").populate("prestation").populate("prestataire").populate("idDevis"))
                 .end();
             next();
         });
@@ -64,6 +64,21 @@ class EvalController {
             res.status(200)
                 .send(evals)
                 .end();
+            next();
+        });
+        this.update = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            yield evaluation_1.Eval.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
+                if (data) {
+                    res.status(200)
+                        .send()
+                        .end();
+                }
+                else {
+                    res.status(404)
+                        .send("VUtilisateur inexistante")
+                        .end();
+                }
+            });
             next();
         });
     }

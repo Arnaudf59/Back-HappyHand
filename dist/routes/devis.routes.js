@@ -10,6 +10,7 @@ const setDevisRouting = (app) => {
     app.get(`/${endpoint}/clients/:id`, devis_controller_1.devisController.findByClient);
     app.get(`/${endpoint}/prestations/:id`, devis_controller_1.devisController.findByPrestation);
     app.post(`/${endpoint}`, devis_controller_1.devisController.create);
+    app.patch(`/${endpoint}/:id`, devis_controller_1.devisController.update);
 };
 exports.setDevisRouting = setDevisRouting;
 //# sourceMappingURL=devis.routes.js.map
