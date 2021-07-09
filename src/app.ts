@@ -10,22 +10,24 @@ import { setDevisRouting } from './routes/devis.routes';
 import { setEvalRouting } from './routes/evaluation.routes';
 import { setFacturationRouting } from './routes/facturation.routes';
 import { setAuthRouting } from './routes/auth.routes';
+import cors from 'cors'
 
     const app = express();
     const port = 8000;
     app.use(express.json());
+    app.use(cors());
 
     app.listen(port, () => {
         console.log(colors.green(`Serveur listening on port :`) + colors.yellow(`${port}`));
     });
 
-    let user = (req, res, next) => {
-        res.setHeader('Access-Control-Allow-Origin', '*');
-        next();
-    }
+    //let user = (req, res, next) => {
+    //    res.setHeader('Access-Control-Allow-Origin', '*');
+    //    next();
+    //}
 
-    app.post("/users", user);
-    app.get("/users", user);
+    //app.post("/users", user);
+    //app.get("/users", user);
 
     setMongoConnect();
 
