@@ -26,7 +26,8 @@ const userSchema = new mongoose.Schema ({
       required: true
     },
     password : {
-      type : String
+      type : String,
+      required: true
     },
     nom: {
       type: String,
@@ -38,7 +39,6 @@ const userSchema = new mongoose.Schema ({
     },
     dateNaissance: {
       type: Date,
-      required: true
     },
     role: {
         type : mongoose.Schema.Types.ObjectId,
