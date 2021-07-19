@@ -1,3 +1,5 @@
+import { isValidObjectId } from "mongoose";
+import { Prestation } from "../models/prestation";
 import { TarifHoraire } from "../models/tarifHoraire";
 
 class TarifHoraireController {
@@ -22,6 +24,23 @@ class TarifHoraireController {
            .end();
         next();
     }
+
+    findByPrestation = async (req, res, next) => {
+        let tarifs = await TarifHoraire.find({ prestation : req.params.id}).populate("user").populate("prestation");
+        res.status(200)
+           .send(tarifs)
+           .end();
+        next();
+    }
+
+    findByPrestationAndUsers = async (req, res, next) => {
+        let tarifs = await TarifHoraire.find({ $and: [{prestation : req.params.id}, {user: req.params.user}] }).populate("user").populate("prestation");
+        res.status(200)
+           .send(tarifs)
+           .end();
+        next();
+    }
+    
 
     update = async (req, res, next) => {
         await TarifHoraire.findByIdAndUpdate(req.params.id, req.body, (err, data) => {
