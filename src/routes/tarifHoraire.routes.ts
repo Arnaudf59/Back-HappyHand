@@ -7,6 +7,7 @@ export const setTarifHoraireRouting = (app) => {
     app.get(`/${endpoint}`, tarifHoraireController.findAll);
     app.get(`/${endpoint}/:id`, tarifHoraireController.findById);
     app.get(`/${endpoint}/prestations/:id`, tarifHoraireController.findByPrestation);
+    app.get(`/${endpoint}/users/:id`, tarifHoraireController.findByUser);
     app.get(`/${endpoint}/prestations/:id/users/:user`, tarifHoraireController.findByPrestationAndUsers);
 
     app.post(`/${endpoint}`, tarifHoraireController.create);
