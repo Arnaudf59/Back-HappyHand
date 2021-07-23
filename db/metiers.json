@@ -10,4 +10,39 @@
   "nom": "Plombier",
   "description": "Je repars votre tuyauterie",
   "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef7f2d47c143c98ee71e5"
+  },
+  "liste_prestation": [
+    "60eef804d47c143c98ee71e7",
+    "60eef813d47c143c98ee71e9",
+    "60eef825d47c143c98ee71eb"
+  ],
+  "nom": "Jardinnage",
+  "description": "Je repars votre tuyauterie",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef83fd47c143c98ee71ed"
+  },
+  "liste_prestation": [
+    "60eef84dd47c143c98ee71ef",
+    "60eef85bd47c143c98ee71f1"
+  ],
+  "nom": "Entretien de la maison",
+  "description": "Je repars votre tuyauterie",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef86bd47c143c98ee71f3"
+  },
+  "liste_prestation": [
+    "60eef876d47c143c98ee71f5",
+    "60eef87fd47c143c98ee71f7",
+    "60eef969d47c143c98ee71fa"
+  ],
+  "nom": "Bricolage",
+  "description": "Je repars votre tuyauterie",
+  "__v": 0
 }]

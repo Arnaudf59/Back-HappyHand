@@ -1,3 +1,4 @@
+import { Devis } from "../models/devis";
 import { Prestation } from "../models/prestation";
 import { User } from "../models/user";
 
@@ -27,6 +28,15 @@ class UserController {
     findByPrestation = async (req, res, next) => {
         let prestation : any = await Prestation.findById(req.params.id);
         let user = await User.find({ prestations : {$in : prestation._id}}).populate("role").populate("prestations").populate("metiers");
+        res.status(200)
+           .send(user)
+           .end()
+        next();
+    }
+
+    findByDevis = async (req, res, next) => {
+        let devis : any = await Devis.findById(req.params.id);
+        let user = await User.find({ _id : {$in : devis.client}}).populate("role").populate("prestations").populate("metiers");
         res.status(200)
            .send(user)
            .end()

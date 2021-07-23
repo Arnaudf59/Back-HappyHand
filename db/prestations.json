@@ -18,4 +18,84 @@
   },
   "description": " ",
   "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef804d47c143c98ee71e7"
+  },
+  "nom": "tondre",
+  "metier": {
+    "$oid": "60eef7f2d47c143c98ee71e5"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef813d47c143c98ee71e9"
+  },
+  "nom": "tailler les haies",
+  "metier": {
+    "$oid": "60eef7f2d47c143c98ee71e5"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef825d47c143c98ee71eb"
+  },
+  "nom": "arroser le jardin",
+  "metier": {
+    "$oid": "60eef7f2d47c143c98ee71e5"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef84dd47c143c98ee71ef"
+  },
+  "nom": "aspirer",
+  "metier": {
+    "$oid": "60eef83fd47c143c98ee71ed"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef85bd47c143c98ee71f1"
+  },
+  "nom": "laver",
+  "metier": {
+    "$oid": "60eef83fd47c143c98ee71ed"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef876d47c143c98ee71f5"
+  },
+  "nom": "Monter un meubles",
+  "metier": {
+    "$oid": "60eef83fd47c143c98ee71ed"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef87fd47c143c98ee71f7"
+  },
+  "nom": "peindre",
+  "metier": {
+    "$oid": "60eef83fd47c143c98ee71ed"
+  },
+  "description": " ",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60eef969d47c143c98ee71fa"
+  },
+  "nom": "tapiser",
+  "metier": {
+    "$oid": "60eef83fd47c143c98ee71ed"
+  },
+  "description": " ",
+  "__v": 0
 }]
