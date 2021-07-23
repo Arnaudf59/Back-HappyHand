@@ -38,6 +38,13 @@ class TarifHoraireController {
                 .end();
             next();
         });
+        this.findByUser = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
+            let tarifs = yield tarifHoraire_1.TarifHoraire.find({ user: req.params.id }).populate("user").populate("prestation");
+            res.status(200)
+                .send(tarifs)
+                .end();
+            next();
+        });
         this.findByPrestationAndUsers = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             let tarifs = yield tarifHoraire_1.TarifHoraire.find({ $and: [{ prestation: req.params.id }, { user: req.params.user }] }).populate("user").populate("prestation");
             res.status(200)

@@ -33,6 +33,14 @@ class TarifHoraireController {
         next();
     }
 
+    findByUser = async (req, res, next) => {
+        let tarifs = await TarifHoraire.find({ user : req.params.id}).populate("user").populate("prestation");
+        res.status(200)
+           .send(tarifs)
+           .end();
+        next();
+    }
+
     findByPrestationAndUsers = async (req, res, next) => {
         let tarifs = await TarifHoraire.find({ $and: [{prestation : req.params.id}, {user: req.params.user}] }).populate("user").populate("prestation");
         res.status(200)
