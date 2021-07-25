@@ -9,7 +9,7 @@ export class UserDoc extends mongoose.Document{
   password : String;
   nom : String;
   prenom : String;
-  dateNaissance : Date;
+  dateNaissance : Number;
   role : RoleDoc;
   adresse : String;
   ville : String;
@@ -38,7 +38,7 @@ const userSchema = new mongoose.Schema ({
       required: true
     },
     dateNaissance: {
-      type: Date,
+      type: Number,
     },
     role: {
         type : mongoose.Schema.Types.ObjectId,

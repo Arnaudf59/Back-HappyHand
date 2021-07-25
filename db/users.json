@@ -13,7 +13,7 @@
     }
   ],
   "email": "arnaud.fourmault@gmail.com",
-  "password": "test",
+  "password": "$2b$10$C8KPAuVZFFPoXw/Thv4BfutKa9IKgRwloKXFA.0R54rCbRO/0J1O.",
   "nom": "Fourmault",
   "prenom": "Arnaud",
   "dateNaissance": {
@@ -34,7 +34,7 @@
   "prestations": [],
   "metiers": [],
   "email": "maud.grosicki@gmail.com",
-  "password": "test",
+  "password": "$2b$10$C8KPAuVZFFPoXw/Thv4BfutKa9IKgRwloKXFA.0R54rCbRO/0J1O.",
   "nom": "Grosicki",
   "prenom": "Maud",
   "dateNaissance": {
@@ -55,7 +55,7 @@
   "prestations": [],
   "metiers": [],
   "email": "thomas.lemaitre@gmail.com",
-  "password": "test",
+  "password": "$2b$10$C8KPAuVZFFPoXw/Thv4BfutKa9IKgRwloKXFA.0R54rCbRO/0J1O.",
   "nom": "Lemaitre",
   "prenom": "Thomas",
   "dateNaissance": {
@@ -71,63 +71,37 @@
   "__v": 0
 },{
   "_id": {
-    "$oid": "60e57489093ea836a8a7fdd8"
+    "$oid": "60fd2df4bab73709fc2de6ca"
   },
   "prestations": [
     {
-      "$oid": "60e4667774e29750281bf9b7"
-    }
-  ],
-  "metiers": [
-    {
-      "$oid": "60e4614331fd424a94ee9f21"
-    }
-  ],
-  "email": "christelle.degand@gmail.com",
-  "password": "test",
-  "nom": "Degand",
-  "prenom": "Christelle",
-  "dateNaissance": {
-    "$date": "2021-07-11T00:00:00Z"
-  },
-  "role": {
-    "$oid": "60e44f4a61171d44e4d7f5b0"
-  },
-  "adresse": "30 rue Pasteur",
-  "ville": "Loos",
-  "codePostal": "59120",
-  "nomPrestataire": "Christelle",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60e5995024b2db47cc86939b"
-  },
-  "prestations": [
-    {
-      "$oid": "60e4667774e29750281bf9b7"
+      "$oid": "60eef804d47c143c98ee71e7"
     },
     {
-      "$oid": "60e5988924b2db47cc869399"
+      "$oid": "60eef813d47c143c98ee71e9"
+    },
+    {
+      "$oid": "60eef825d47c143c98ee71eb"
     }
   ],
   "metiers": [
     {
-      "$oid": "60e4614331fd424a94ee9f21"
+      "$oid": "60eef7f2d47c143c98ee71e5"
     }
   ],
-  "email": "yannick.lombard@gmail.com",
-  "password": "test",
-  "nom": "Lombart",
-  "prenom": "Yannick",
-  "dateNaissance": {
-    "$date": "2021-07-11T00:00:00Z"
-  },
   "role": {
     "$oid": "60e44f4a61171d44e4d7f5b0"
   },
+  "nom": "Lombart",
+  "prenom": "Yannick",
   "adresse": "8 rue de lomme",
-  "ville": "Lille",
+  "ville": "Lomme",
   "codePostal": "59800",
+  "dateNaissance": {
+    "$date": "1970-01-01T00:00:00.044Z"
+  },
   "nomPrestataire": "Yannick",
+  "email": "yannick.lombard@gmail.com",
+  "password": "$2b$10$c4pnWWH6/igC9bR9Zi2vb.tvJllXDBI9kd1EblenGNfCz9E2Tm51e",
   "__v": 0
 }]

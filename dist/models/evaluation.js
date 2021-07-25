@@ -22,20 +22,23 @@ const evalSchema = new mongoose_1.default.Schema({
         ref: 'User'
     },
     qualitePresta: {
-        type: String
+        type: Number
     },
     qualiteComunication: {
-        type: String
+        type: Number
     },
     qualiteDossierTech: {
-        type: String
+        type: Number
     },
     niveauExpertise: {
-        type: String
+        type: Number
     },
     idDevis: {
         type: mongoose_1.default.Schema.Types.ObjectId,
         ref: 'Devis'
+    },
+    statusEvals: {
+        type: Number
     }
 });
 exports.Eval = mongoose_1.default.model("Eval", evalSchema);
