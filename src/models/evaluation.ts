@@ -12,7 +12,8 @@ export class EvalDoc extends mongoose.Document {
     qualiteComunication: String;
     qualiteDossierTech: String;
     niveauExpertise: String;
-    idDevis: DevisDoc
+    idDevis: DevisDoc;
+    statusEvals : Number;
 
 }
 
@@ -30,21 +31,24 @@ const evalSchema = new mongoose.Schema({
         ref: 'User'
     },
     qualitePresta: {
-        type: String
+        type: Number
     },
     qualiteComunication: {
-        type: String
+        type: Number
 
     },
     qualiteDossierTech: {
-        type: String
+        type: Number
     },
     niveauExpertise: {
-        type: String
+        type: Number
     },
     idDevis: {
         type: mongoose.Schema.Types.ObjectId,
         ref: 'Devis'
+    },
+    statusEvals: {
+        type: Number
     }
 
 });
