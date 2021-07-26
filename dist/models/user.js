@@ -27,7 +27,7 @@ const userSchema = new mongoose_1.default.Schema({
         required: true
     },
     dateNaissance: {
-        type: Date,
+        type: Number,
     },
     role: {
         type: mongoose_1.default.Schema.Types.ObjectId,
