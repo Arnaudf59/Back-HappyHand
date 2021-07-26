@@ -5,9 +5,45 @@
   "devis": {
     "$oid": "60e46912d4cc842af4764f80"
   },
-  "montant": 11,
+  "montant": 15,
   "dateFacturation": {
     "$date": "2021-07-11T00:00:00Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60f6c6b0b46e15222885ce6c"
+  },
+  "devis": {
+    "$oid": "60f56faf20f892449c834ac0"
+  },
+  "montant": 35,
+  "dateFacturation": {
+    "$date": "2021-07-20T12:50:56.642Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60fac29ef9ce522068911978"
+  },
+  "devis": {
+    "$oid": "60fac267f9ce522068911941"
+  },
+  "montant": 40,
+  "dateFacturation": {
+    "$date": "2021-07-23T13:22:38.128Z"
+  },
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60fe60523112b93a94cd5b56"
+  },
+  "devis": {
+    "$oid": "60fe60023112b93a94cd5b23"
+  },
+  "montant": 20,
+  "dateFacturation": {
+    "$date": "2021-07-26T07:12:18.856Z"
   },
   "__v": 0
 }]

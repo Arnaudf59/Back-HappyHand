@@ -262,4 +262,28 @@
   },
   "statusDevis": 1,
   "__v": 0
+},{
+  "_id": {
+    "$oid": "60fe60023112b93a94cd5b23"
+  },
+  "prestation": [
+    {
+      "$oid": "60eef813d47c143c98ee71e9"
+    }
+  ],
+  "prestataire": {
+    "$oid": "60fe5fba3112b93a94cd5ac8"
+  },
+  "client": {
+    "$oid": "60e571ad093ea836a8a7fdd0"
+  },
+  "dateDevis": {
+    "$date": "2021-07-26T07:10:58.188Z"
+  },
+  "prix": 20,
+  "datePrestation": {
+    "$date": "2021-07-30T13:10:00Z"
+  },
+  "statusDevis": 2,
+  "__v": 0
 }]

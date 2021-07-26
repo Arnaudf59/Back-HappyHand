@@ -19,7 +19,7 @@
     "$oid": "60e46912d4cc842af4764f80"
   },
   "__v": 0,
-  "statusEvals": "0"
+  "statusEvals": 0
 },{
   "_id": {
     "$oid": "60f6c6b0b46e15222885ce6e"
@@ -41,7 +41,7 @@
     "$oid": "60f56faf20f892449c834ac0"
   },
   "__v": 0,
-  "statusEvals": "1"
+  "statusEvals": 1
 },{
   "_id": {
     "$oid": "60fac29ef9ce52206891197a"
@@ -62,5 +62,28 @@
   "idDevis": {
     "$oid": "60fac267f9ce522068911941"
   },
+  "__v": 0,
+  "statusEvals ": 0
+},{
+  "_id": {
+    "$oid": "60fe60523112b93a94cd5b58"
+  },
+  "user": {
+    "$oid": "60e571ad093ea836a8a7fdd0"
+  },
+  "prestation": {
+    "$oid": "60eef813d47c143c98ee71e9"
+  },
+  "prestataire": {
+    "$oid": "60fe5fba3112b93a94cd5ac8"
+  },
+  "qualitePresta": 0,
+  "qualiteComunication": 0,
+  "qualiteDossierTech": 0,
+  "niveauExpertise": 0,
+  "idDevis": {
+    "$oid": "60fe60023112b93a94cd5b23"
+  },
+  "statusEvals": 0,
   "__v": 0
 }]
