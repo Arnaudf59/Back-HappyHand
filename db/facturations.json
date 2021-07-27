@@ -36,7 +36,7 @@
     "$date": "2021-07-27T07:52:37.179Z"
   },
   "__v": 0,
-  "statusFacture": 0
+  "statusFacture": 1
 },{
   "_id": {
     "$oid": "60ffdc1b7af74a0820bc3eca"
@@ -49,5 +49,44 @@
     "$date": "2021-07-27T10:12:43.598Z"
   },
   "statusFacture": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffe9527af74a0820bc40f7"
+  },
+  "devis": {
+    "$oid": "60f67fe260e76d12a43243ed"
+  },
+  "montant": 14,
+  "dateFacturation": {
+    "$date": "2021-07-27T11:09:06.092Z"
+  },
+  "statusFacture": 0,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffe9c97af74a0820bc4148"
+  },
+  "devis": {
+    "$oid": "60ffe9b67af74a0820bc4125"
+  },
+  "montant": 24,
+  "dateFacturation": {
+    "$date": "2021-07-27T11:11:05.328Z"
+  },
+  "statusFacture": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61001ab1a8fa111c8ce9516f"
+  },
+  "devis": {
+    "$oid": "61001a57a8fa111c8ce95134"
+  },
+  "montant": 16,
+  "dateFacturation": {
+    "$date": "2021-07-27T14:39:45.819Z"
+  },
+  "statusFacture": 1,
   "__v": 0
 }]
