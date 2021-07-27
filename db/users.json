@@ -24,7 +24,8 @@
   "ville": "Loos",
   "codePostal": "59120",
   "nomPrestataire": "",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60e571ad093ea836a8a7fdd0"
@@ -43,7 +44,8 @@
   "ville": "La Bassée",
   "codePostal": "59051",
   "nomPrestataire": "",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60e57370093ea836a8a7fdd2"
@@ -62,7 +64,8 @@
   "ville": "La Bassée",
   "codePostal": "59051",
   "nomPrestataire": "",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60e57489093ea836a8a7fdd8"
@@ -91,7 +94,8 @@
   "ville": "Loos",
   "codePostal": "59120",
   "nomPrestataire": "Christelle",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60e5995024b2db47cc86939b"
@@ -122,7 +126,8 @@
   "ville": "Lille",
   "codePostal": "59800",
   "nomPrestataire": "Yannick",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60e6f49775c47614a019a4cf"
@@ -152,7 +157,8 @@
   "ville": "Loos",
   "codePostal": "59120",
   "nomPrestataire": "Yannick",
-  "__v": 0
+  "__v": 0,
+  "status": 0
 },{
   "_id": {
     "$oid": "60e6f63275c47614a019a4d5"
@@ -182,7 +188,8 @@
   "ville": "Loos",
   "codePostal": "59120",
   "nomPrestataire": "Max",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60f97b734a506c0740c4c305"
@@ -212,7 +219,8 @@
   "nomPrestataire": "Arnaudf59",
   "email": "arnaudf59@hotmail.frss",
   "password": "$2b$10$mRSrS5d0xsv/63cEGjoCrOh1XlkF/L.LbqJwFz4gDLssCKEpL9rna",
-  "__v": 0
+  "__v": 0,
+  "status": 0
 },{
   "_id": {
     "$oid": "60f980234a506c0740c4c333"
@@ -245,7 +253,8 @@
   "nomPrestataire": "Arnaudf59",
   "email": "arnaudf59@hotmail.frx",
   "password": "$2b$10$8kgidPzi92UAXlbsTGD71uFPciEYUu74yDD1kbih540nawRZTrAOK",
-  "__v": 0
+  "__v": 0,
+  "status": 0
 },{
   "_id": {
     "$oid": "60fe5fba3112b93a94cd5ac8"
@@ -278,7 +287,8 @@
   "nomPrestataire": "Quentin",
   "email": "quentin.douroux@gmail.com",
   "password": "$2b$10$0j/VXVSQQZiH8gTzs3Wu9uNISa33/kwAPljFbJtIiaEyv9NtRV/B6",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60fe9a013112b93a94cd5bff"
@@ -311,7 +321,8 @@
   "nomPrestataire": "Tanguy",
   "email": "tanguy@gmail.com",
   "password": "$2b$10$lpYTOKqtbn64v1reV0q3JuVv8CEelNQ5opS4ssQZ7FPUkSoOstj/O",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60fe9a623112b93a94cd5c38"
@@ -344,7 +355,8 @@
   "nomPrestataire": "PlaDamien",
   "email": "damien@gmail.com",
   "password": "$2b$10$Rla5rF6iU6ktGx9U2a7iVeTl9xtowKk4QfNuj4jeVrGwQnE.NLEcq",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60ffb03be744eb2e20f86679"
@@ -363,7 +375,8 @@
   "nomPrestataire": "pascal",
   "email": "pascal.gmail.com",
   "password": "$2b$10$yM4vk3Jg5rTr3/BPQaPik.xKTnAeG21e7vVQILW6cGVoIIliN1g82",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60ffbac4e744eb2e20f869be"
@@ -382,7 +395,8 @@
   "nomPrestataire": "TchiTchi",
   "email": "elias@gmail.com",
   "password": "$2b$10$G37CsxIKMtfOFEnrx4k87.rGNerkyLKn2WydsNaivjPr400gU.Emu",
-  "__v": 0
+  "__v": 0,
+  "status": 1
 },{
   "_id": {
     "$oid": "60ffdbe47af74a0820bc3e90"
@@ -401,5 +415,77 @@
   "nomPrestataire": "Jp",
   "email": "jp@gmail.com",
   "password": "$2b$10$68ZAESrOkzSGSy6Cf8HOJ.1soet8Uiq4yoItoNN1n8ZVVYv/EPoqG",
+  "__v": 0,
+  "status": 1
+},{
+  "_id": {
+    "$oid": "60ffe99d7af74a0820bc410e"
+  },
+  "prestations": null,
+  "metiers": null,
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "nom": "fourmault",
+  "prenom": "eugénie",
+  "adresse": "3 rue",
+  "ville": "loos",
+  "codePostal": "59120",
+  "dateNaissance": 40,
+  "nomPrestataire": "euge",
+  "email": "eugenie@gmail.com",
+  "password": "$2b$10$Z74S1gGAC4u0dqN1gqkOyeR9bK4uBvYqHdCwHSijBrfC3P4v6Try2",
+  "__v": 0,
+  "status": 1
+},{
+  "_id": {
+    "$oid": "61000d3fa8fa111c8ce95037"
+  },
+  "prestations": [
+    {
+      "$oid": "60eef804d47c143c98ee71e7"
+    },
+    {
+      "$oid": "60eef813d47c143c98ee71e9"
+    }
+  ],
+  "metiers": [
+    {
+      "$oid": "60eef7f2d47c143c98ee71e5"
+    }
+  ],
+  "role": {
+    "$oid": "60e44f4a61171d44e4d7f5b0"
+  },
+  "nom": "Blino ",
+  "prenom": "Yohan",
+  "adresse": "test",
+  "ville": "feev",
+  "codePostal": "591",
+  "dateNaissance": 14,
+  "nomPrestataire": "test",
+  "email": "tot@gmail.com",
+  "password": "$2b$10$P2rxtrUmck1YhJKVaTF1NeBthXrWWTLByK4XTWpw5s5mJqmLyZP.y",
+  "status": 1,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61001a1ea8fa111c8ce9511b"
+  },
+  "prestations": null,
+  "metiers": null,
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "nom": "truc",
+  "prenom": "muche",
+  "adresse": "3 rue du truc",
+  "ville": "feev",
+  "codePostal": "591",
+  "dateNaissance": 30,
+  "nomPrestataire": "test",
+  "email": "truc@gmail.com",
+  "password": "$2b$10$ug5g/Wsl7XusczlEx1rHee2Nw6wy.i5Gbrm8ZJoUXnNHgkKu8NrPe",
+  "status": 1,
   "__v": 0
 }]

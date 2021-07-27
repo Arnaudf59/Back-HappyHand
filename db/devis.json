@@ -116,7 +116,7 @@
   "datePrestation": {
     "$date": "2021-07-26T11:53:00Z"
   },
-  "statusDevis": 1,
+  "statusDevis": 2,
   "__v": 0
 },{
   "_id": {
@@ -285,5 +285,77 @@
     "$date": "2021-07-30T12:00:00Z"
   },
   "statusDevis": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffe9b67af74a0820bc4125"
+  },
+  "prestation": [
+    {
+      "$oid": "60eef813d47c143c98ee71e9"
+    }
+  ],
+  "prestataire": {
+    "$oid": "60e5995024b2db47cc86939b"
+  },
+  "client": {
+    "$oid": "60ffe99d7af74a0820bc410e"
+  },
+  "dateDevis": {
+    "$date": "2021-07-27T11:10:46.984Z"
+  },
+  "prix": 24,
+  "datePrestation": {
+    "$date": "2021-07-30T14:13:00Z"
+  },
+  "statusDevis": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61001a57a8fa111c8ce95134"
+  },
+  "prestation": [
+    {
+      "$oid": "60eef813d47c143c98ee71e9"
+    }
+  ],
+  "prestataire": {
+    "$oid": "60e5995024b2db47cc86939b"
+  },
+  "client": {
+    "$oid": "61001a1ea8fa111c8ce9511b"
+  },
+  "dateDevis": {
+    "$date": "2021-07-27T14:38:15.615Z"
+  },
+  "prix": 16,
+  "datePrestation": {
+    "$date": "2021-07-30T15:00:00Z"
+  },
+  "statusDevis": 2,
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61001df7a8fa111c8ce951f1"
+  },
+  "prestation": [
+    {
+      "$oid": "60eef813d47c143c98ee71e9"
+    }
+  ],
+  "prestataire": {
+    "$oid": "60e5995024b2db47cc86939b"
+  },
+  "client": {
+    "$oid": "60e571ad093ea836a8a7fdd0"
+  },
+  "dateDevis": {
+    "$date": "2021-07-27T14:53:43.767Z"
+  },
+  "prix": 16,
+  "datePrestation": {
+    "$date": "2021-07-27T06:00:00Z"
+  },
+  "statusDevis": 1,
   "__v": 0
 }]
