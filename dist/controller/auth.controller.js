@@ -34,7 +34,8 @@ class AuthController {
                 user = yield user_1.User.create(user);
                 const payload = {
                     user: {
-                        id: user.id
+                        id: user.id,
+                        role: user.role
                     }
                 };
                 jsonwebtoken_1.default.sign(payload, "randomString", {
