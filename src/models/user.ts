@@ -17,6 +17,7 @@ export class UserDoc extends mongoose.Document{
   nomPrestataire : String;
   prestations : PrestationDoc[];
   metiers : MetierDoc[];
+  status : Number;
 }
 
 const userSchema = new mongoose.Schema ({
@@ -58,6 +59,9 @@ const userSchema = new mongoose.Schema ({
     },
     description : {
       type: String
+    },
+    status : {
+      type: Number
     },
     prestations : [{
       type : mongoose.Schema.Types.ObjectId,
