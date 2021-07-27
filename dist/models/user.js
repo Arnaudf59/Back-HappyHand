@@ -48,6 +48,9 @@ const userSchema = new mongoose_1.default.Schema({
     description: {
         type: String
     },
+    status: {
+        type: Number
+    },
     prestations: [{
             type: mongoose_1.default.Schema.Types.ObjectId,
             ref: 'Prestation'
