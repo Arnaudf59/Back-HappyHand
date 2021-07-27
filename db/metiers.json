@@ -5,7 +5,8 @@
   "liste_prestation": [
     {
       "$oid": "60e4667774e29750281bf9b7"
-    }
+    },
+    "60e5988924b2db47cc869399"
   ],
   "nom": "Plombier",
   "description": "Je repars votre tuyauterie",
@@ -43,30 +44,6 @@
     "60eef969d47c143c98ee71fa"
   ],
   "nom": "Bricolage",
-  "description": "Je repars votre tuyauterie",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60fd28cb79f84334dc87a3c4"
-  },
-  "liste_prestation": [],
-  "nom": "electricien",
-  "description": "Je repars votre tuyauterie",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60fd28f379f84334dc87a3c6"
-  },
-  "liste_prestation": [],
-  "nom": "cuisinier",
-  "description": "Je repars votre tuyauterie",
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60fd290379f84334dc87a3c8"
-  },
-  "liste_prestation": [],
-  "nom": "masseur",
   "description": "Je repars votre tuyauterie",
   "__v": 0
 }]

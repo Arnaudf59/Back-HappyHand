@@ -1,41 +1,5 @@
 [{
   "_id": {
-    "$oid": "60e46dc43b38da4d787b94bd"
-  },
-  "devis": {
-    "$oid": "60e46912d4cc842af4764f80"
-  },
-  "montant": 15,
-  "dateFacturation": {
-    "$date": "2021-07-11T00:00:00Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60f6c6b0b46e15222885ce6c"
-  },
-  "devis": {
-    "$oid": "60f56faf20f892449c834ac0"
-  },
-  "montant": 35,
-  "dateFacturation": {
-    "$date": "2021-07-20T12:50:56.642Z"
-  },
-  "__v": 0
-},{
-  "_id": {
-    "$oid": "60fac29ef9ce522068911978"
-  },
-  "devis": {
-    "$oid": "60fac267f9ce522068911941"
-  },
-  "montant": 40,
-  "dateFacturation": {
-    "$date": "2021-07-23T13:22:38.128Z"
-  },
-  "__v": 0
-},{
-  "_id": {
     "$oid": "60fe60523112b93a94cd5b56"
   },
   "devis": {
@@ -45,5 +9,45 @@
   "dateFacturation": {
     "$date": "2021-07-26T07:12:18.856Z"
   },
+  "__v": 0,
+  "statusFacture": 1
+},{
+  "_id": {
+    "$oid": "60ffb163e744eb2e20f866c6"
+  },
+  "devis": {
+    "$oid": "60ffb07be744eb2e20f86690"
+  },
+  "montant": 24,
+  "dateFacturation": {
+    "$date": "2021-07-27T07:10:27.738Z"
+  },
+  "__v": 0,
+  "statusFacture": 1
+},{
+  "_id": {
+    "$oid": "60ffbb45e744eb2e20f86a10"
+  },
+  "devis": {
+    "$oid": "60ffbb04e744eb2e20f869d5"
+  },
+  "montant": 24,
+  "dateFacturation": {
+    "$date": "2021-07-27T07:52:37.179Z"
+  },
+  "__v": 0,
+  "statusFacture": 0
+},{
+  "_id": {
+    "$oid": "60ffdc1b7af74a0820bc3eca"
+  },
+  "devis": {
+    "$oid": "60ffdc047af74a0820bc3ea7"
+  },
+  "montant": 16,
+  "dateFacturation": {
+    "$date": "2021-07-27T10:12:43.598Z"
+  },
+  "statusFacture": 0,
   "__v": 0
 }]

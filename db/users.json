@@ -144,9 +144,7 @@
   "password": "$2b$10$flhMV6o4LVPeIR24vLDW/e41aeizC9A.P2Qm6pWWcqNhPfC4FOgBa",
   "nom": "Florent",
   "prenom": "Menildres",
-  "dateNaissance": {
-    "$date": "2021-07-11T00:00:00Z"
-  },
+  "dateNaissance": 32,
   "role": {
     "$oid": "60e44f4a61171d44e4d7f5b0"
   },
@@ -176,9 +174,7 @@
   "password": "$2b$10$o9vXqU.OvuCFTA6sIf/9k.dT0Mr0we.2EV1/APY9HC/eF5Vz49sqG",
   "nom": "Max",
   "prenom": "Gentil",
-  "dateNaissance": {
-    "$date": "2021-07-11T00:00:00Z"
-  },
+  "dateNaissance": 34,
   "role": {
     "$oid": "60e44f4a61171d44e4d7f5b0"
   },
@@ -348,5 +344,62 @@
   "nomPrestataire": "PlaDamien",
   "email": "damien@gmail.com",
   "password": "$2b$10$Rla5rF6iU6ktGx9U2a7iVeTl9xtowKk4QfNuj4jeVrGwQnE.NLEcq",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffb03be744eb2e20f86679"
+  },
+  "prestations": null,
+  "metiers": null,
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "nom": "Caron",
+  "prenom": "Pascal",
+  "adresse": "6 rue pasteur",
+  "ville": "Loos",
+  "codePostal": "59120",
+  "dateNaissance": 46,
+  "nomPrestataire": "pascal",
+  "email": "pascal.gmail.com",
+  "password": "$2b$10$yM4vk3Jg5rTr3/BPQaPik.xKTnAeG21e7vVQILW6cGVoIIliN1g82",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffbac4e744eb2e20f869be"
+  },
+  "prestations": null,
+  "metiers": null,
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "nom": "Machi",
+  "prenom": "Elias",
+  "adresse": "3 rue d'haubourdin",
+  "ville": "Lille",
+  "codePostal": "59000",
+  "dateNaissance": 33,
+  "nomPrestataire": "TchiTchi",
+  "email": "elias@gmail.com",
+  "password": "$2b$10$G37CsxIKMtfOFEnrx4k87.rGNerkyLKn2WydsNaivjPr400gU.Emu",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "60ffdbe47af74a0820bc3e90"
+  },
+  "prestations": null,
+  "metiers": null,
+  "role": {
+    "$oid": "60e44f4761171d44e4d7f5ae"
+  },
+  "nom": "fourmault",
+  "prenom": "jean-pierre",
+  "adresse": "3 rue budapest",
+  "ville": "Haubourdin",
+  "codePostal": "59320",
+  "dateNaissance": 50,
+  "nomPrestataire": "Jp",
+  "email": "jp@gmail.com",
+  "password": "$2b$10$68ZAESrOkzSGSy6Cf8HOJ.1soet8Uiq4yoItoNN1n8ZVVYv/EPoqG",
   "__v": 0
 }]
