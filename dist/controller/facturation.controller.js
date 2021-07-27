@@ -21,7 +21,7 @@ class FacturationController {
         });
         this.findAll = (req, res, next) => __awaiter(this, void 0, void 0, function* () {
             res.status(200)
-                .send(yield facturation_1.Facturation.find().populate("devis"))
+                .send(yield facturation_1.Facturation.find().populate("devis").populate({ path: 'devis', populate: { path: 'client' } }).populate({ path: 'devis', populate: { path: 'prestataire' } }))
                 .end();
             next();
         });

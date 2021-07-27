@@ -11,7 +11,7 @@ class FacturationController {
 
     findAll = async(req, res, next) => {
         res.status(200)
-           .send(await Facturation.find().populate("devis"))
+           .send(await Facturation.find().populate("devis").populate({path: 'devis', populate : {path : 'client'}}).populate({path: 'devis', populate : {path : 'prestataire'}}))
            .end();
         next();
     }

@@ -18,6 +18,9 @@ const facturationSchema = new mongoose_1.default.Schema({
     },
     dateFacturation: {
         type: Date
+    },
+    statusFacture: {
+        type: Number
     }
 });
 exports.Facturation = mongoose_1.default.model("Facturation", facturationSchema);

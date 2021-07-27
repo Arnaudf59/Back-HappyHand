@@ -5,6 +5,7 @@ export class FacturationDoc extends mongoose.Document {
     devis: DevisDoc;
     montant: Number;
     dateFacturation: Date;
+    statusFacture: Number;
 }
 
 const facturationSchema = new mongoose.Schema({
@@ -17,6 +18,9 @@ const facturationSchema = new mongoose.Schema({
     },
     dateFacturation: {
         type: Date
+    },
+    statusFacture: {
+        type: Number
     }
 
 });
