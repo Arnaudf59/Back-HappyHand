@@ -21,14 +21,6 @@ import cors from 'cors'
         console.log(colors.green(`Serveur listening on port :`) + colors.yellow(`${port}`));
     });
 
-    //let user = (req, res, next) => {
-    //    res.setHeader('Access-Control-Allow-Origin', '*');
-    //    next();
-    //}
-
-    //app.post("/users", user);
-    //app.get("/users", user);
-
     setMongoConnect();
 
     setUserRouting(app);
