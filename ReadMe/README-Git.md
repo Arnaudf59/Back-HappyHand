@@ -1,4 +1,4 @@
-# Nom du projet
+# Git
 
 Super projet machin bidule
 
